@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 250px;
+            height: 300px;
+            box-shadow: 1px 1px 5px 2px lightgrey;
+            border-radius: 1%;
+            margin: auto;
+            padding: 25px;
+
+        }
+        p{padding: 0px; margin: 0px; font-family: monospace; font-weight: bold; font-size: 1rem; color: grey;}
+    </style>
+</head>
+<body>
+    <div id="a">
+        <p>var lenthX = 10; <br> var lenthY = 23; <br> if(lenthX == display.lenth){ <br> console.log(lenthX); <br> }else{ <br> console.log('none'); <br> } <br> </p>
+        <p id="f"><span id="s"></span></p>
+        </div>
+
+
+    <script>
+        var f = document.getElementById('f');
+        var g = document.getElementById('span');
+        const l = ['v', 'a', 'r', ' ', '=', ' ', 'l', 'e', 'n', 't', 'h', ';', ' ', ' ' ];
+        let i = 0;
+        let x = f.innerText;
+        setInterval(function(){
+            d = l[i]
+            x+=d;
+            f.innerText = x;
+            if(i == 13){i=0; x='';}else{i++;}
+        },300);
+    </script>
+</body>
+</html>
